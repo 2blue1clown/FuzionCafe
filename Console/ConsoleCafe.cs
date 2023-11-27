@@ -55,9 +55,14 @@ public class ConsoleCafe
         Console.WriteLine("Welcome to the restaurant!");
         Console.WriteLine("Here is the menu:");
         //TODO: Sort into categories
-        foreach (var item in _waiter.Menu.Items)
+        var categories = _waiter.Menu.Items.GroupBy(x => x.Category);
+        foreach (var category in categories)
         {
-            Console.WriteLine($"{item.Name} - ${item.Price}");
+            Console.WriteLine($"{category.Key}:");
+            foreach (var item in category)
+            {
+                Console.WriteLine($"{item.Name} - ${item.Price}");
+            }
         }
     }
 
