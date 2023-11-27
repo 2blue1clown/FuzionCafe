@@ -99,7 +99,7 @@ public class ConsoleCafe
             // try to pass to valid int
             if (!int.TryParse(quantityString, out int quantityInt))
             {
-                Console.WriteLine("Sorry, that is not a valid quantity. Please enter a number.");
+                Console.WriteLine("Sorry, that is not a valid quantity. Please enter an integer.");
                 continue;
             }
             quantity = quantityInt;
