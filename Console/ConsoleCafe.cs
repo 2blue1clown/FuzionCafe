@@ -46,7 +46,8 @@ public class ConsoleCafe
         {
             Console.WriteLine($"{item.Name} x {item.Quantity} (${item.Price} each)\t.... {item.Price * item.Quantity} ");
         }
-        Console.WriteLine($"Your bill is ${bill.Total:0.00}");
+        Console.WriteLine();
+        Console.WriteLine($"Total:${bill.Total:0.00}");
     }
 
     void Welcome()
