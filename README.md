@@ -1,3 +1,8 @@
+# After the Buzzer Realisation
+I now realise that I did not apply the Dependency Injection principle as fully as I would have liked. Having my Waiter class depend on the Bill, Menu and ItemOrderInfo classes directly is not optimal. 
+
+While it adds a fair bit more complexity... I could have injected the IMenu through the waiter's constructor. To inject the Bill and ItemOrderInfo classes I could have a IBillFactory that gets injected into the constructor gives access to an IBill, and the same with an IItemOrderInfoFactory to give access to IITemOrderInfoFactory.
+
 # FuzionCafe
 
 Time available: 2 hrs
