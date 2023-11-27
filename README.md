@@ -11,3 +11,6 @@ It is your choice what type of application to deliver (mobile, web, desktop, con
 simple or complex you make it, however we are looking for quality of design and code over complex
 or copious features. As an example, make sure you’ve properly implemented unit tests on the simple
 core before developing the next feature. 
+
+
+I used a bit of extra time because Tim said I could use 4hrs if I really wanted (sorry)
