@@ -2,6 +2,7 @@
 namespace OrderService;
 public interface IBill
 {
-    decimal Total { get; }
-    IEnumerable<IMenuItem> Items { get; }
+    double Total { get; }
+    IEnumerable<IItemOrderInfo> order { get; }
 }
+

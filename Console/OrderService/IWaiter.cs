@@ -4,7 +4,9 @@ namespace OrderService;
 public interface IWaiter
 {
     Menu Menu { get; set; }
-    void PlaceOrder(string order);
+    void PlaceOrder(string order, int quantity);
+
+    void TakeOrder();
 
     IBill GetBill();
 
