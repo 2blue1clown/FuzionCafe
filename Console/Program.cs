@@ -4,9 +4,9 @@ using AppService;
 using DataService;
 using OrderService;
 
-var waiter = new FuzionWaiter();
+var waiter = new Waiter();
 var dataService = new DummyDataService();
 
-var cafe = new FuzionCafe(waiter, dataService);
+var cafe = new ConsoleCafe(waiter, dataService);
 
 cafe.ReceiveCustomer();

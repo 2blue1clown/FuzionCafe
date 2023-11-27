@@ -1,6 +1,6 @@
 namespace OrderService;
 
-public class FuzionWaiter : IWaiter
+public class Waiter : IWaiter
 {
     public Menu Menu { get; set; }
 
@@ -36,15 +36,5 @@ public class FuzionWaiter : IWaiter
         return new Bill(_order.Values);
     }
 
-    public void TakeOrder()
-    {
-        Console.WriteLine("What item would you like to order?");
-        var itemName = Console.ReadLine();
-        Console.WriteLine("How many would you like?");
-
-        var quantity = int.Parse(Console.ReadLine());
-
-        PlaceOrder(itemName, quantity);
-    }
 
 }
